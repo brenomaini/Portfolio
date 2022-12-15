@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-size: 62,5%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+
 }
 body{
   display: flex;
@@ -18,19 +20,20 @@ header{
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
-  background-color: #000000;
+  background-color: rgba(000, 000, 000, 80%);
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 8vh;
   width: 100vw;
-  color:white
+  color:white;
 }
 nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 30vw; 
+  font-size: 2.8rem;
 }
 
 a{
@@ -44,9 +47,6 @@ a{
 nav a:visited, a:hover{
   color:rgba(255, 255, 255, 50%);
   }
-  a:active{
-  border-bottom: solid 2px white;
-  }
 
 .container{
   border-radius: 1rem;
@@ -54,18 +54,27 @@ nav a:visited, a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
   width: 90vw;
   height: 200vh;
   background-color: #5F5F5F;
+  animation: bgLight 5s infinite ease-in-out;
+  font-size: 1.6rem;
 
 }
 .outro{
   display:flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
   width: 100vw;
   height: 100vh; 
+}
+#Foto img{
+  width: 12vw;
+  height: auto;
+  border-radius: 100%;
+  border: solid 1px white;
 }
 
 .carousel{
@@ -90,7 +99,7 @@ nav a:visited, a:hover{
   top: 50%;
   left: 50%;
   font-weight: bolder;
-  font-size: 1.3rem;
+  font-size: 2.5rem;
 }
 .positionCenter{ 
   filter:blur(0px);
@@ -98,32 +107,39 @@ nav a:visited, a:hover{
 }
 .positionMiddleLeft{
   filter:blur(15px);
-  transform:scale(0.5) translate(150%, -10%);
+  transform:scale(0.5) translate(450%, -10%);
+  animation: fluctuate infinite ease-in-out 3s;
+
 }
 .positionMiddleRight{
   filter:blur(15px);
-  transform:scale(0.5) translate(-260%, -10%); 
+  transform:scale(0.5) translate(-700%, -10%); 
+  animation: fluctuate infinite ease-in-out 3s;
+
 }
 .positionLeft{
   filter:blur(10px);
   transform:scale(0.7) translate(-350%, -50%);
+  animation: fluctuate infinite ease-in-out 2.5s;
+
 
 }
 .positionRight{
   filter:blur(10px);
   transform:scale(0.7) translate(160%, -50%);
+  animation: fluctuate infinite ease-in-out 2.5s;
+
 }
 .image{
-  width: 50%;
-  height: 50%;  
+  width: 10vw;
+  height: 10vh;  
   pointer-events: none;
-
 }
 .knowledge{
   display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 25vw;
   height: 50vh;
   pointer-events: none;
@@ -131,51 +147,55 @@ nav a:visited, a:hover{
 .knowledgeBar{
   display:flex;
   align-items: center;
-  padding-left: 2px;
-  width: 10rem;
-  height: 1.1rem;
+  width: 12rem;
+  height: 1.3rem;
   border: solid black;
-  border-radius: 20px;
+  border-radius: 10px;
   filter: drop-shadow(0 0 2px black);
 
 }
 .knowledgeText{
   margin: 10px;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 .cssKB{
+  margin-left: 2px;
   border-radius: 25px;
   width: 60%;
-  background-color: #000070;
-  filter:drop-shadow(0 0 5px #000070);
+  background-color: #3c9cd7;
+  filter:drop-shadow(0 0 3px #3c9cd7);
 
 }
 .htmlKB{
+  margin-left: 2px;
   border-radius: 25px;
   width: 60%;
-  background-color: #903030;
-  filter:drop-shadow(0 0 5px #903030);
+  background-color: #E44D26;
+  filter:drop-shadow(0 0 3px #E44D26);
 
 }
 .nodeKB{
+  margin-left: 2px;
   border-radius: 25px;
   width: 60%;
-  background-color: #9acd32 ;
-  filter:drop-shadow(0 0 5px #9acd32 );
+  background-color: #83CD29 ;
+  filter:drop-shadow(0 0 3px #83CD29 );
 
 }
 .javaKB{
-  border-radius: 25px;
+  border-radius: 10px;
+  margin-left: 2px;
   width: 60%;
-  background-color: #FFA500;
-  filter:drop-shadow(0 0 5px #FFA500);
+  background-color: #f1bf22;
+  filter:drop-shadow(0 0 3px #f1bf22);
 }
 .reactKB{
+  margin-left: 2px;
   border-radius: 25px;
   width: 60%;
-  background-color: #102030;
-  filter:drop-shadow(0 0 5px #102030);
+  background-color: #1055FF;
+  filter:drop-shadow(0 0 3px #1055FF);
 
 }
 .fill{
@@ -195,3 +215,36 @@ nav a:visited, a:hover{
 @keyframes fillOut {
   to{width: 0%;}
 }
+
+@keyframes fluctuate {
+
+  0%{
+    
+    height: 35vh; 
+  }
+  50%{
+   
+    height: 33.5vh; 
+  }
+  100%{ 
+    height: 35vh;  }
+  
+}
+
+@keyframes bgLight {
+
+  
+  0%{ 
+    filter: drop-shadow(0px 0px 5px white);
+  }
+  50%{
+    filter: drop-shadow(0px 0px 12px white);
+  }
+   
+  100%{ 
+    filter: drop-shadow(0px 0px 5px white);
+  }
+ 
+  
+}
+
