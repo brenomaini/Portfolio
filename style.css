@@ -13,7 +13,13 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: black;
+  background: linear-gradient(
+    #dedede,
+    rgb(0, 57, 82),
+    rgb(0, 57, 82),
+    #dedede,
+    #dedede)
+
 }
 
 header{
@@ -28,6 +34,19 @@ header{
   height: 8vh;
   width: 100vw;
   color:white;
+}
+
+.logo{
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo img{
+  height: 5vh;
+}
+.logo:hover{
+  filter: drop-shadow(2px 2px 3px white);
 }
 nav{
   display: flex;
@@ -46,7 +65,8 @@ a{
   width: 30vw;
 }
 nav a:hover{
-  color:rgba(255, 255, 255, 50%);
+  scale: 1.1;
+  filter: drop-shadow(0 0 2px white);
   }
 
 .container{
@@ -57,35 +77,22 @@ nav a:hover{
   align-items: center;
   width: 100vw;
   height: 360vh;
-  animation: bgLight 5s infinite ease-in-out;
-  font-size: 2.4rem;
-  
+  font-size: 2.4rem;  
 }
 
-.separator{
-  width: 100vw;
-  height: 0.5vh;
-  background-color: white;
-  box-shadow: 0px 5px 6px black;
-}
 .outro{
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0;
   width: 100vw;
-  height: 100vh; 
+  height: 120vh; 
 }
-#About{
-    background: linear-gradient(
-    -60deg,
-    white 0%,
-    white 45%,
-    paleturquoise 50%,
-    paleturquoise 90%
-  );
-}
+
+
+/* ------------------------------------ About Section ------------------------ */
+
 .aboutLeft{
   display: flex;
   justify-content: center;
@@ -93,18 +100,27 @@ nav a:hover{
   flex-direction: column;
   font-size: 3.2rem;
   width: 45vw;
-  filter:drop-shadow(0 0 10px black);
+  filter:drop-shadow(0 0 20px black);
 
 }
 .aboutRight{
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5rem;
+  font-size: 1.6rem;
   width: 45vw;
+  padding: 5rem;
+  background: white;
+ filter:drop-shadow(0 0 20px black);
 }
-h1, span{
+.aboutLeft h1, span{
   color: white;
   font-size: 5rem;
+}
+.aboutRight h1{
+  font-size: 3rem;
 }
 .feDev{
   display: block;
@@ -117,6 +133,8 @@ h1, span{
   border-radius: 0px;
 }
 
+/* ------------------------------------ Knowledge Section ------------------------ */
+
 .carousel{
   margin-top: 10rem;
   position: relative;
@@ -125,7 +143,7 @@ h1, span{
   flex-direction: column;
   width: 100vw;
   height: 100vh; 
-
+  color: white;  
 }
 
 .item{
@@ -191,10 +209,11 @@ h1, span{
   align-items: center;
   width: 12rem;
   height: 1.3rem;
-  border: solid black;
+  border: solid white 0.15rem;
   border-radius: 10px;
   filter: drop-shadow(0 0 2px black);
-
+  color:black;
+  text-align: center;
 }
 .knowledgeText{
   margin: 10px;
@@ -204,7 +223,7 @@ h1, span{
 .cssKB{
   margin-left: 2px;
   border-radius: 25px;
-  width: 60%;
+  width: 80%;
   background-color: #3c9cd7;
   filter:drop-shadow(0 0 3px #3c9cd7);
 
@@ -212,15 +231,14 @@ h1, span{
 .htmlKB{
   margin-left: 2px;
   border-radius: 25px;
-  width: 60%;
+  width: 80%;
   background-color: #E44D26;
   filter:drop-shadow(0 0 3px #E44D26);
-
 }
 .nodeKB{
   margin-left: 2px;
   border-radius: 25px;
-  width: 60%;
+  width: 15%;
   background-color: #83CD29 ;
   filter:drop-shadow(0 0 3px #83CD29 );
 
@@ -235,10 +253,9 @@ h1, span{
 .reactKB{
   margin-left: 2px;
   border-radius: 25px;
-  width: 60%;
+  width: 0%;
   background-color: #1055FF;
   filter:drop-shadow(0 0 3px #1055FF);
-
 }
 .fill{
   height: 75%;
@@ -246,28 +263,50 @@ h1, span{
   animation-fill-mode: forwards;
 }
 :where(.positionCenter) img{
-  filter: drop-shadow(0 0 5px white);
+  filter: drop-shadow(0 0 3px white);
 }
-
-#Skills{
+:where(.knowledgeBar) :first-child:not(.fill) {
+  opacity: 0;
+}
+#ReactKB *{
+  color: white;
+}
+/* ------------------------------------ Soft Skills Sections ------------------------ */
+.skills{
   display:flex;
   align-items: center;
-  height: 50vh;
+  height: 90vh;
+  margin-top: 20vh;
+  color: white;
 }
-
-#Skills:has(.skillItem:hover) .skillItem:not(:hover){
-  scale:0.9;
-  opacity: 0.3;
-  width: 10%;
-}
-
 .skillItem{
   display:flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 50vh;
+  height: 80vh;
   transition-duration: 1s;
+}
+
+.skills .skillItem:hover{
+  width: 250%;
+}
+.skillBody{
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.skillTitle, .skillBody{
+  transition: all ease-in-out 1s;
+}
+.skillBody:not(:hover){
+  opacity: 0;
+}
+.skillItem:hover :last-child{
+  opacity: 1;
+}
+.skillItem:hover span:first-of-type{
+  opacity: 0.3;
+  scale:0.8;
 }
 
 /*-----------------------ANIMATIONS---------------------------*/
@@ -294,21 +333,5 @@ h1, span{
   
 }
 
-@keyframes bgLight {
-
-  
-  0%{ 
-    filter: drop-shadow(0px 0px 5px white);
-  }
-  50%{
-    filter: drop-shadow(0px 0px 12px white);
-  }
-   
-  100%{ 
-    filter: drop-shadow(0px 0px 5px white);
-  }
- 
-  
-}
 
 
