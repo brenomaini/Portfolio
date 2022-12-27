@@ -457,6 +457,19 @@ footer{
   background-color: black;
   opacity: 0.8;
 }
+
+.hidden{
+  opacity: 0;
+  filter: blur(15px);
+  transition: 1s;
+  transform: translateX(-55%);
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+
+}
 /*-----------------------ANIMATIONS---------------------------*/
 
 @keyframes fillIn {
