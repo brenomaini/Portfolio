@@ -10,12 +10,15 @@
 </head>
 <body>
   <header>
-      <div class="logo"><a href="#"><img src="./images/stack.svg">  BRENO/MAINI</a></div>
+      <div class="logo">
+        <a href="#"><img class="logoImg" src="./images/stack.svg">BRENO/MAINI</a>
+      </div>
       <nav class="nav">
           <a class="navItem" href="#" id="Home">Home</a>
           <a class="navItem" href="#knowledgeArea">Conhecimento</a>
           <a class="navItem" href="#Skills">Soft Skills</a>
           <a class="navItem" href="#Projects">Projetos</a>
+          <a class="navItem" href="#Contato">Contato</a>
       </nav>
   </header>
 
@@ -23,9 +26,9 @@
 
       <div class="outro" id="About">
          <div class="aboutLeft">
-          <div><h1>Olá!</h1> Eu sou o<span> Breno Maini</span></div> 
-          <img src="./images/Minha/MinhFoto.png" id="Foto" alt="Dev Picture"> 
-          <span class="feDev">FullStack Developer</span>
+          <div><h1>Olá,</h1> Eu sou o<span> Breno Maini!</span></div> 
+          
+          <span class="feDev">FullStack Developer.</span>
         </div>
          <div class="aboutRight"><h1>FullStack em desenvolvimento</h1>
 
@@ -34,23 +37,32 @@
         </div>
       </div>
     
-      <hr id="knowledgeArea"></hr>
+      <span id="knowledgeArea"></span>
       <div class="carousel" >
-                MEUS CONHECIMENTOS
-          <div class="item positionCenter" id="JavaKB">
-             <img src="./images/javascript.svg" alt="Javascript Logo Image" srcset="" class="image">                
-                <div class="knowledge">
-                  Nível de conhecimento
-                    <div class="knowledgeBar">
-                      <div class="javaKB fill">60%</div>
-                    </div>
-                    <div class="knowledgeText">
-                     Conhecimento básico consolidado, consigo realizar diversas tarefas desde a manipulação da DOM quanto a Async/Await promisses.<br>
-                    <br>
-                     Busco dominar essa linguagem por sua versatilidade e por possuir boas bibliotecas disponíveis no mercado.
-                    </div> 
-                </div>               
-          </div>
+               <h1>MEUS CONHECIMENTOS</h1> 
+             <div class="icons">
+              <img src="./images/javascript.svg" class="logoIcon">
+              <img src="./images/css.svg" class="logoIcon">
+              <img src="./images/html.svg" class="logoIcon">
+              <img src="./images/react.svg" class="logoIcon">
+              <img src="./images/node-js.svg" class="logoIcon">
+              <!-- <img src="./images/git-github.svg" class="image"> -->
+             </div>
+
+        <div class="item positionCenter" id="JavaKB">
+          <img src="./images/javascript.svg" alt="Javascript Logo Image" srcset="" class="image">                
+             <div class="knowledge">
+               Nível de conhecimento
+                 <div class="knowledgeBar">
+                   <div class="javaKB fill">60%</div>
+                 </div>
+                 <div class="knowledgeText">
+                  Conhecimento básico consolidado, consigo realizar diversas tarefas desde a manipulação da DOM quanto a Async/Await promisses.<br>
+                 <br>
+                  Busco dominar essa linguagem por sua versatilidade e por possuir boas bibliotecas disponíveis no mercado.
+                 </div> 
+             </div>               
+        </div> 
           <div class="item positionLeft" id="HtmlKB">
             <img src="./images/html.svg" alt="HTML Logo Image" srcset="" class="image"> 
               <div class="knowledge">            
@@ -102,39 +114,99 @@
               </div>
             </div>            
           </div>
+          <div class="item positionLeftBehind" id="gitKB">
+            <img src=" ./images/stack.svg" alt="Css Logo Image" srcset="" class="image">
+              <div class="knowledge">
+                Nível de conhecimento 
+                  <div class="knowledgeBar">
+                    <div class="cssKB "> 80% </div>
+              </div>
+              <div class="knowledgeText">
+                Conhecimento sólido em CSS.<br><br>
+                Nem todas as tarefas são realizadas de forma rápida, contudo, por conhecer as possibilidades e os atributos disponíveis as respostas são encontradas e as ideias saem do papel.
+              </div>
+            </div>            
+          </div>
+          <div class="item positionRightBehind" id="XXKB">
+            <img src=" ./images/stack.svg" alt="Css Logo Image" srcset="" class="image">
+              <div class="knowledge">
+                Nível de conhecimento 
+                  <div class="knowledgeBar">
+                    <div class="cssKB "> 80% </div>
+              </div>
+              <div class="knowledgeText">
+                Conhecimento sólido em CSS.<br><br>
+                Nem todas as tarefas são realizadas de forma rápida, contudo, por conhecer as possibilidades e os atributos disponíveis as respostas são encontradas e as ideias saem do papel.
+              </div>
+            </div>            
+          </div>
       </div>
-      <hr id="Skills"></hr>
+      <span id="Skills"></span>
       <div class="outro skills">
-        <div class="skillItem"><img src="./images/Skills/business-29144.svg" alt="" srcset="">
-          <span class="skillTitle">Title</span>
-          <span class="skillBody"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa odio quo cupiditate voluptas officia voluptatem possimus quam
+        <div class="skillItem"><img src="./images/Skills/perspective.svg" alt="" srcset="">
+          <span class="skillTitle">Prudência</span>
+          <span class="skillBody">Apesar de não me considerar sábio,mas por ser bem comunicativo, muitos vem até mim para aconselhamentos. Sou uma pessoa cuidadosa e minhas escolhas são consistentemente prudentes em torno do objetivo final.
           </span>
         </div>
-        <div class="skillItem"><img src="./images/Skills/business-29151.svg" alt="" srcset="">
-          <span class="skillTitle">Title</span>
-          <span class="skillBody">orem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa odio quo cupiditate voluptas officia voluptatem possimus quam
+        <div class="skillItem"><img src="./images/Skills/leadership.svg" alt="" srcset="">
+          <span class="skillTitle">Liderança</span>
+          <span class="skillBody">Constantemente encorajo o grupo a realizar coisas e busco preservar a harmonia entre a equipe fazendo com que todos se sintam incluídos.
+          Organização de tarefas para terceiros e gerenciamento de equipe é algo que tenho descoberto recentemente em um novo cargo, mas com ótimos feedbacks.
           </span>
         </div>
-        <div class="skillItem"><img src="./images/Skills/business-29158.svg" alt="" srcset="">
-          <span class="skillTitle">Title</span>
-          <span class="skillBody">orem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa odio quo cupiditate voluptas officia voluptatem possimus quam
+        <div class="skillItem"><img src="./images/Skills/learn.svg" alt="" srcset="">
+          <span class="skillTitle">Aprendiz</span>
+          <span class="skillBody">Acredito que sermos aprendizes eternos é o que nos torna desenvolvedores, para que possamos trilhar um bom caminho na vida como um todo, estar sempre em busca de aprendizado é essencial.
           </span>
         </div>
-        <div class="skillItem"><img src="./images/Skills/business-31544.svg" alt="" srcset="">
-          <span class="skillTitle">Title</span>
-          <span class="skillBody">orem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa odio quo cupiditate voluptas officia voluptatem possimus quam
+        <div class="skillItem"><img src="./images/Skills/teamwork.svg" alt="" srcset="">
+          <span class="skillTitle">TeamWork</span>
+          <span class="skillBody">Me adapto facilmente a novos grupos. Um colega leal e dedicado, sempre faço minha parte e trabalho duro pelo sucesso do grupo. Busco sempre apoiar em todo tipo de ocasião em que for possível.
           </span>
         </div>
-        <div class="skillItem"><img src="./images/Skills/business-29145.svg" alt="" srcset="">
-          <span class="skillTitle">Title</span>
-          <span class="skillBody">orem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa odio quo cupiditate voluptas officia voluptatem possimus quam
+        <div class="skillItem"><img src="./images/Skills/criteria.svg" alt="" srcset="">
+          <span class="skillTitle">Critério</span>
+          <span class="skillBody">Pensar sobre as coisas e examiná-las de todos os lados são aspectos importantes de quem eu sou. Mudar de ideia não é um problema, mas não tomo decisões sem analisar as possibilidades.
           </span>
         </div>
       </div>
 
-      <div class="outro" id="Projects"></div>
+      <div class="outro" id="Projects">
+          <div class="projetos"></div>
+          <div class="projetos"></div>
+          <div class="projetos"></div>
+          <div class="projetos"></div>
+      </div>
+
+
+      <div class="outro" id="Contato">
+        
+        <div class="info"> 
+        <span>Mídias sociais</span><br>
+        <span>
+          <a href="https://linkedin.com/in/brenomaini" target="_blank"><img src="./images/social/linkedin.svg" alt=""></a><a href="https://github.com/brenomaini" target="_blank"><img src="./images/social/github.svg" alt=""></a>
+        </span>
+        </div>
+        <div class="subImage"><img src="./images/Minha/MinhFoto.png" id="Foto" alt="Dev Picture"> 
+        </div>
+        
+        
+          <form action="" method="get" id="contactInfo">
+            Entre em contato<br>
+            <label for="name">Nome:</label><input type="text" name="" id="name"><br>
+            <label for="email">Email:</label><input type="email" name="" id="email"><br>
+            <label for="info">Informações:</label><br><textarea name="info" id="info" cols="40" rows="10"></textarea><br>
+            <input type="submit" value="Enviar" class="submit">
+          </form>
+        
+        
+      </div>
+      <footer>
+        <img class="logoImg" src="./images/stack.svg">Breno/Maini
+        <a href="https://iconscout.com">Icons on IconScout</a>
+      </footer>
   </div>
+ 
   <script src="script.js"></script>
-  <footer><a href="https://iconscout.com/icons/javascript" target="_blank"> Icons</a> on <a href="https://iconscout.com">IconScout</a> 
 </body>
 </html>

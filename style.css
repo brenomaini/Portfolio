@@ -13,12 +13,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(
-    #dedede,
-    rgb(0, 57, 82),
-    rgb(0, 57, 82),
-    #dedede,
-    #dedede)
+  background-color: black;
 
 }
 
@@ -42,8 +37,8 @@ header{
   align-items: center;
   justify-content: space-evenly;
 }
-.logo img{
-  height: 5vh;
+.logoImg{
+  height: 60%;
 }
 .logo:hover{
   filter: drop-shadow(2px 2px 3px white);
@@ -52,7 +47,7 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 30vw; 
+  width: 40vw; 
   font-size: 2.8rem;
 }
 
@@ -63,6 +58,7 @@ a{
   align-items: center;
   height: 8vh;
   width: 30vw;
+  text-decoration: none;
 }
 nav a:hover{
   scale: 1.1;
@@ -75,9 +71,17 @@ nav a:hover{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 360vh;
+  width: 95vw;
+  height: 480vh;
   font-size: 2.4rem;  
+  background: linear-gradient(
+    #dedede,
+    #dedede,
+    #353A47,
+    #353A47,
+    #353A47,
+    #dedede,
+    #dedede)
 }
 
 .outro{
@@ -86,8 +90,8 @@ nav a:hover{
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  width: 100vw;
-  height: 120vh; 
+  width: 100%;
+  height: 130vh; 
 }
 
 
@@ -115,8 +119,9 @@ nav a:hover{
   background: white;
  filter:drop-shadow(0 0 20px black);
 }
-.aboutLeft h1, span{
-  color: white;
+.aboutLeft h1, .aboutLeft span{
+  color: black;
+
   font-size: 5rem;
 }
 .aboutRight h1{
@@ -142,10 +147,23 @@ nav a:hover{
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 100vh; 
+  height: 140vh; 
   color: white;  
 }
+.carousel h1{
+  font-size: 3rem;
+}
+.icons{
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap:3rem;
 
+}
+.logoIcon{
+width: 3rem;
+height: 3rem;  
+}
 .item{
   position: absolute;
   transition: all 1s ease;
@@ -165,28 +183,39 @@ nav a:hover{
   filter:blur(0px);
   transform:scale(1) translate(-50%, -50%);
 }
-.positionMiddleLeft{
-  filter:blur(15px);
-  transform:scale(0.5) translate(450%, -10%);
-  animation: fluctuate infinite ease-in-out 3s;
-
-}
 .positionMiddleRight{
   filter:blur(15px);
-  transform:scale(0.5) translate(-700%, -10%); 
+  transform:scale(0.4) translate(460%, -10%);
   animation: fluctuate infinite ease-in-out 3s;
 
 }
-.positionLeft{
-  filter:blur(10px);
-  transform:scale(0.7) translate(-350%, -50%);
-  animation: fluctuate infinite ease-in-out 2.5s;
-
+.positionMiddleLeft{
+  filter:blur(15px);
+  transform:scale(0.4) translate(-700%, -10%); 
+  animation: fluctuate infinite ease-in-out 3s;
 
 }
 .positionRight{
   filter:blur(10px);
-  transform:scale(0.7) translate(160%, -50%);
+  transform:scale(0.5) translate(-350%, -50%);
+  animation: fluctuate infinite ease-in-out 2.5s;
+
+
+}
+.positionLeft{
+  filter:blur(10px);
+  transform:scale(0.5) translate(160%, -50%);
+  animation: fluctuate infinite ease-in-out 2.5s;
+
+}
+.positionLeftBehind{
+  filter:blur(15px);
+  transform:scale(0.3) translate(-1150%, -50%);
+  animation: fluctuate infinite ease-in-out 2.5s;
+}
+.positionRightBehind{
+  filter:blur(15px);
+  transform:scale(0.3) translate(900%, -50%);
   animation: fluctuate infinite ease-in-out 2.5s;
 
 }
@@ -286,9 +315,13 @@ nav a:hover{
   width: 100vw;
   height: 80vh;
   transition-duration: 1s;
+  filter: drop-shadow(0 0 20px black);
 }
-
-.skills .skillItem:hover{
+.skillTitle{
+  font-size: 2rem;
+  margin: 10px;
+}
+ .skillItem:hover{
   width: 250%;
 }
 .skillBody{
@@ -303,12 +336,127 @@ nav a:hover{
 }
 .skillItem:hover :last-child{
   opacity: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  filter: drop-shadow(0px 0px 5px white);
+
+  border-radius: 10px;
 }
 .skillItem:hover span:first-of-type{
   opacity: 0.3;
   scale:0.8;
 }
 
+/* ------------------------------------ Project Sections ------------------------ */
+
+.projetos{
+  width: 15rem;
+  height: 15rem;
+  background-color: black;
+}
+
+
+
+
+/* ------------------------------------ Contact Sections ------------------------ */
+#Contato{
+  position: relative;
+}
+.subImage{ 
+  width: 15vw;
+  height: 25vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top: 15%;
+  left: 15%;
+  border-radius: 50%;
+ box-shadow: 0px 5px 5px black;
+ 
+}
+.info{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 9%;
+  top: 20%;
+  width: 50vw;
+  height: 50vh;
+  background-color: gray;
+  border-radius: 10px;
+  filter: drop-shadow(-5px 5px 5px black); 
+}
+.info span{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.info a{
+  display: inline;
+}
+.info img{
+  margin: 15px;
+  width: 4vw;
+  transition-duration: 0.5s;
+}
+
+.info img:hover{
+  filter: drop-shadow(0 0 5px white);
+  cursor: pointer;
+  scale: 1.1;
+}
+#contactInfo{
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  width: 35vw;
+  top: 10%;
+  right: 15%;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  filter: drop-shadow(-5px 5px 5px black);
+  color: white;
+}
+#contactInfo input,textarea{
+  margin: 15px;
+  width: 50%;
+}
+textarea{
+  width: 70%;
+
+}
+.submit{
+  border-radius: 20px;
+
+}
+.submit:hover{
+  cursor: pointer;
+  background-color: black;
+  color:white;  
+  filter: drop-shadow(0px 0px 5px white);
+  font-weight: bold;
+
+}
+input:focus, textarea:focus{
+  outline: white;
+  filter: drop-shadow(0px 0px 5px white);
+}
+footer{
+  color:white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 5vh;
+  font-size: 1.2rem;
+  background-color: black;
+  opacity: 0.8;
+}
 /*-----------------------ANIMATIONS---------------------------*/
 
 @keyframes fillIn {
@@ -332,6 +480,7 @@ nav a:hover{
     height: 35vh;  }
   
 }
+
 
 
 
