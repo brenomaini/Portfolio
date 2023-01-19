@@ -1,23 +1,21 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-
 }
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: black;
-
 }
 
-header{
+header {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -28,30 +26,30 @@ header{
   align-items: center;
   height: 8vh;
   width: 100vw;
-  color:white;
+  color: white;
 }
 
-.logo{
+.logo {
   font-size: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.logoImg{
+.logoImg {
   height: 60%;
 }
-.logo:hover{
+.logo:hover {
   filter: drop-shadow(2px 2px 3px white);
 }
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40vw; 
+  width: 40vw;
   font-size: 2.8rem;
 }
 
-a{
+a {
   color: white;
   display: flex;
   justify-content: center;
@@ -60,54 +58,53 @@ a{
   width: 30vw;
   text-decoration: none;
 }
-nav a:hover{
+nav a:hover {
   scale: 1.1;
   filter: drop-shadow(0 0 2px white);
-  }
+}
 
-.container{
+.container {
   border-radius: 1rem;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 95vw;
   height: 480vh;
-  font-size: 2.4rem;  
+  font-size: 2.4rem;
   background: linear-gradient(
     #dedede,
     #dedede,
-    #353A47,
-    #353A47,
-    #353A47,
+    #353a47,
+    #353a47,
+    #353a47,
     #dedede,
-    #dedede)
+    #dedede
+  );
 }
 
-.outro{
-  display:flex;
+.outro {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 0;
   width: 100%;
-  height: 130vh; 
+  height: 130vh;
 }
-
 
 /* ------------------------------------ About Section ------------------------ */
 
-.aboutLeft{
+.aboutLeft {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 3.2rem;
   width: 45vw;
-  filter:drop-shadow(0 0 20px black);
-
+  filter: drop-shadow(0 0 20px black);
 }
-.aboutRight{
+.aboutRight {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,22 +114,23 @@ nav a:hover{
   width: 45vw;
   padding: 5rem;
   background: white;
- filter:drop-shadow(0 0 20px black);
+  filter: drop-shadow(0 0 20px black);
 }
-.aboutLeft h1, .aboutLeft span{
+.aboutLeft h1,
+.aboutLeft span {
   color: black;
 
   font-size: 5rem;
 }
-.aboutRight h1{
+.aboutRight h1 {
   font-size: 3rem;
 }
-.feDev{
+.feDev {
   display: block;
-  font-size: 2.4rem;  
+  font-size: 2.4rem;
 }
-#Foto{
-  filter:drop-shadow(0 0 10px black);
+#Foto {
+  filter: drop-shadow(0 0 10px black);
   border-radius: 100%;
   height: 25vh;
   border-radius: 0px;
@@ -140,37 +138,36 @@ nav a:hover{
 
 /* ------------------------------------ Knowledge Section ------------------------ */
 
-.carousel{
+.carousel {
   margin-top: 10rem;
   position: relative;
-  display:flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 140vh; 
-  color: white;  
+  height: 140vh;
+  color: white;
 }
-.carousel h1{
+.carousel h1 {
   font-size: 3rem;
 }
-.icons{
+.icons {
   padding: 4rem;
   display: flex;
   flex-direction: row;
-  gap:3rem;
-
+  gap: 3rem;
 }
-.logoIcon{
-width: 3rem;
-height: 3rem;  
+.logoIcon {
+  width: 3rem;
+  height: 3rem;
 }
-.item{
+.item {
   position: absolute;
   transition: all 1s ease;
   cursor: pointer;
-  height: 35vh; 
+  height: 35vh;
   width: 10vw;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -179,53 +176,47 @@ height: 3rem;
   font-weight: bolder;
   font-size: 2.5rem;
 }
-.positionCenter{ 
-  filter:blur(0px);
-  transform:scale(1) translate(-50%, -50%);
+.positionCenter {
+  filter: blur(0px);
+  transform: scale(1) translate(-50%, -50%);
 }
-.positionMiddleRight{
-  filter:blur(15px);
-  transform:scale(0.4) translate(460%, -10%);
+.positionMiddleRight {
+  filter: blur(15px);
+  transform: scale(0.4) translate(460%, -10%);
   animation: fluctuate infinite ease-in-out 3s;
-
 }
-.positionMiddleLeft{
-  filter:blur(15px);
-  transform:scale(0.4) translate(-700%, -10%); 
+.positionMiddleLeft {
+  filter: blur(15px);
+  transform: scale(0.4) translate(-700%, -10%);
   animation: fluctuate infinite ease-in-out 3s;
-
 }
-.positionRight{
-  filter:blur(10px);
-  transform:scale(0.5) translate(-350%, -50%);
-  animation: fluctuate infinite ease-in-out 2.5s;
-
-
-}
-.positionLeft{
-  filter:blur(10px);
-  transform:scale(0.5) translate(160%, -50%);
-  animation: fluctuate infinite ease-in-out 2.5s;
-
-}
-.positionLeftBehind{
-  filter:blur(15px);
-  transform:scale(0.3) translate(-1150%, -50%);
+.positionRight {
+  filter: blur(10px);
+  transform: scale(0.5) translate(-350%, -50%);
   animation: fluctuate infinite ease-in-out 2.5s;
 }
-.positionRightBehind{
-  filter:blur(15px);
-  transform:scale(0.3) translate(900%, -50%);
+.positionLeft {
+  filter: blur(10px);
+  transform: scale(0.5) translate(160%, -50%);
   animation: fluctuate infinite ease-in-out 2.5s;
-
 }
-.image{
+.positionLeftBehind {
+  filter: blur(15px);
+  transform: scale(0.3) translate(-1150%, -50%);
+  animation: fluctuate infinite ease-in-out 2.5s;
+}
+.positionRightBehind {
+  filter: blur(15px);
+  transform: scale(0.3) translate(900%, -50%);
+  animation: fluctuate infinite ease-in-out 2.5s;
+}
+.image {
   width: 10vw;
-  height: 10vh;  
+  height: 10vh;
   pointer-events: none;
 }
-.knowledge{
-  display:flex;
+.knowledge {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -233,83 +224,81 @@ height: 3rem;
   height: 50vh;
   pointer-events: none;
 }
-.knowledgeBar{
-  display:flex;
+.knowledgeBar {
+  display: flex;
   align-items: center;
   width: 12rem;
   height: 1.3rem;
   border: solid white 0.15rem;
   border-radius: 10px;
   filter: drop-shadow(0 0 2px black);
-  color:black;
+  color: black;
   text-align: center;
 }
-.knowledgeText{
+.knowledgeText {
   margin: 10px;
   padding: 10px;
   font-size: 1.6rem;
 }
-.cssKB{
+.cssKB {
   margin-left: 2px;
   border-radius: 25px;
   width: 80%;
   background-color: #3c9cd7;
-  filter:drop-shadow(0 0 3px #3c9cd7);
-
+  filter: drop-shadow(0 0 3px #3c9cd7);
 }
-.htmlKB{
+.htmlKB {
   margin-left: 2px;
   border-radius: 25px;
   width: 80%;
-  background-color: #E44D26;
-  filter:drop-shadow(0 0 3px #E44D26);
+  background-color: #e44d26;
+  filter: drop-shadow(0 0 3px #e44d26);
 }
-.nodeKB{
+.nodeKB {
   margin-left: 2px;
   border-radius: 25px;
   width: 15%;
-  background-color: #83CD29 ;
-  filter:drop-shadow(0 0 3px #83CD29 );
-
+  background-color: #83cd29;
+  filter: drop-shadow(0 0 3px #83cd29);
 }
-.javaKB{
+.javaKB {
   border-radius: 10px;
   margin-left: 2px;
   width: 60%;
   background-color: #f1bf22;
-  filter:drop-shadow(0 0 3px #f1bf22);
+  filter: drop-shadow(0 0 3px #f1bf22);
 }
-.reactKB{
+.reactKB {
   margin-left: 2px;
   border-radius: 25px;
   width: 0%;
-  background-color: #1055FF;
-  filter:drop-shadow(0 0 3px #1055FF);
+  background-color: #1055ff;
+  filter: drop-shadow(0 0 3px #1055ff);
 }
-.fill{
+.fill {
   height: 75%;
   animation: 1.5s ease-in-out;
   animation-fill-mode: forwards;
 }
-:where(.positionCenter) img{
+:where(.positionCenter) img {
   filter: drop-shadow(0 0 3px white);
 }
 :where(.knowledgeBar) :first-child:not(.fill) {
   opacity: 0;
 }
-#ReactKB *{
+#ReactKB * {
   color: white;
 }
 /* ------------------------------------ Soft Skills Sections ------------------------ */
-.skills{
-  display:flex;
+.skills {
+  display: flex;
   align-items: center;
   height: 90vh;
   margin-top: 20vh;
   color: white;
 }
-.skillItem{
-  display:flex;
+.skillItem {
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
@@ -317,51 +306,49 @@ height: 3rem;
   transition-duration: 1s;
   filter: drop-shadow(0 0 20px black);
 }
-.skillTitle{
+.skillTitle {
   font-size: 2rem;
   margin: 10px;
 }
- .skillItem:hover{
+.skillItem:hover {
   width: 250%;
 }
-.skillBody{
+.skillBody {
   font-size: 1.6rem;
   padding: 1rem;
 }
-.skillTitle, .skillBody{
+.skillTitle,
+.skillBody {
   transition: all ease-in-out 1s;
 }
-.skillBody:not(:hover){
+.skillBody:not(:hover) {
   opacity: 0;
 }
-.skillItem:hover :last-child{
+.skillItem:hover :last-child {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.9);
   filter: drop-shadow(0px 0px 5px white);
 
   border-radius: 10px;
 }
-.skillItem:hover span:first-of-type{
+.skillItem:hover span:first-of-type {
   opacity: 0.3;
-  scale:0.8;
+  scale: 0.8;
 }
 
 /* ------------------------------------ Project Sections ------------------------ */
 
-.projetos{
+.projetos {
   width: 15rem;
   height: 15rem;
   background-color: black;
 }
 
-
-
-
 /* ------------------------------------ Contact Sections ------------------------ */
-#Contato{
+#Contato {
   position: relative;
 }
-.subImage{ 
+.subImage {
   width: 15vw;
   height: 25vh;
   position: absolute;
@@ -372,10 +359,9 @@ height: 3rem;
   top: 15%;
   left: 15%;
   border-radius: 50%;
- box-shadow: 0px 5px 5px black;
- 
+  box-shadow: 0px 5px 5px black;
 }
-.info{
+.info {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -386,28 +372,28 @@ height: 3rem;
   height: 50vh;
   background-color: gray;
   border-radius: 10px;
-  filter: drop-shadow(-5px 5px 5px black); 
+  filter: drop-shadow(-5px 5px 5px black);
 }
-.info span{
+.info span {
   font-size: 2.5rem;
   font-weight: bolder;
   text-decoration: underline;
 }
-.info a{
+.info a {
   display: inline;
 }
-.info img{
+.info img {
   margin: 15px;
   width: 4vw;
   transition-duration: 0.5s;
 }
 
-.info img:hover{
+.info img:hover {
   filter: drop-shadow(0 0 5px white);
   cursor: pointer;
   scale: 1.1;
 }
-#contactInfo{
+#contactInfo {
   padding: 10px;
   position: absolute;
   text-align: center;
@@ -420,32 +406,31 @@ height: 3rem;
   filter: drop-shadow(-5px 5px 5px black);
   color: white;
 }
-#contactInfo input,textarea{
+#contactInfo input,
+textarea {
   margin: 15px;
   width: 50%;
 }
-textarea{
+textarea {
   width: 70%;
-
 }
-.submit{
+.submit {
   border-radius: 20px;
-
 }
-.submit:hover{
+.submit:hover {
   cursor: pointer;
   background-color: black;
-  color:white;  
+  color: white;
   filter: drop-shadow(0px 0px 5px white);
   font-weight: bold;
-
 }
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
   outline: white;
   filter: drop-shadow(0px 0px 5px white);
 }
-footer{
-  color:white;
+footer {
+  color: white;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -458,42 +443,54 @@ footer{
   opacity: 0.8;
 }
 
-.hidden{
+.hidden {
   opacity: 0;
   filter: blur(15px);
   transition: 1s;
   transform: translateX(-55%);
 }
-.show{
+.show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-
+}
+.square {
+  position: relative;
+}
+.tras,
+.frente {
+  position: absolute;
+  background-color: #1055ff;
+}
+.frente {
+  background-color: red;
+  z-index: 1;
+  transition: all 0.4s ease;
 }
 /*-----------------------ANIMATIONS---------------------------*/
+.frente:hover {
+  height: 10%;
+}
 
 @keyframes fillIn {
-  from{width: 0%;}
+  from {
+    width: 0%;
+  }
 }
 @keyframes fillOut {
-  to{width: 0%;}
+  to {
+    width: 0%;
+  }
 }
 
 @keyframes fluctuate {
-
-  0%{
-    
-    height: 35vh; 
+  0% {
+    height: 35vh;
   }
-  50%{
-   
-    height: 33vh; 
+  50% {
+    height: 33vh;
   }
-  100%{ 
-    height: 35vh;  }
-  
+  100% {
+    height: 35vh;
+  }
 }
-
-
-
-
