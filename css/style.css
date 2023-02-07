@@ -69,7 +69,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 95vw;
+  width: 100vw;
   height: 480vh;
   font-size: 2.4rem;
   background: linear-gradient(
@@ -224,62 +224,12 @@ nav a:hover {
   height: 50vh;
   pointer-events: none;
 }
-.knowledgeBar {
-  display: flex;
-  align-items: center;
-  width: 12rem;
-  height: 1.3rem;
-  border: solid white 0.15rem;
-  border-radius: 10px;
-  filter: drop-shadow(0 0 2px black);
-  color: black;
-  text-align: center;
-}
 .knowledgeText {
   margin: 10px;
   padding: 10px;
   font-size: 1.6rem;
 }
-.cssKB {
-  margin-left: 2px;
-  border-radius: 25px;
-  width: 80%;
-  background-color: #3c9cd7;
-  filter: drop-shadow(0 0 3px #3c9cd7);
-}
-.htmlKB {
-  margin-left: 2px;
-  border-radius: 25px;
-  width: 80%;
-  background-color: #e44d26;
-  filter: drop-shadow(0 0 3px #e44d26);
-}
-.nodeKB {
-  margin-left: 2px;
-  border-radius: 25px;
-  width: 15%;
-  background-color: #83cd29;
-  filter: drop-shadow(0 0 3px #83cd29);
-}
-.javaKB {
-  border-radius: 10px;
-  margin-left: 2px;
-  width: 60%;
-  background-color: #f1bf22;
-  filter: drop-shadow(0 0 3px #f1bf22);
-}
-.reactKB {
-  margin-left: 2px;
-  border-radius: 25px;
-  width: 0%;
-  background-color: #1055ff;
-  filter: drop-shadow(0 0 3px #1055ff);
-}
-.fill {
-  height: 75%;
-  animation: 1.5s ease-in-out;
-  animation-fill-mode: forwards;
-}
+
 :where(.positionCenter) img {
   filter: drop-shadow(0 0 3px white);
 }
@@ -304,7 +254,6 @@ nav a:hover {
   width: 100vw;
   height: 80vh;
   transition-duration: 1s;
-  filter: drop-shadow(0 0 20px black);
 }
 .skillTitle {
   font-size: 2rem;
@@ -326,8 +275,6 @@ nav a:hover {
 }
 .skillItem:hover :last-child {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.9);
-  filter: drop-shadow(0px 0px 5px white);
 
   border-radius: 10px;
 }
@@ -461,26 +408,25 @@ footer {
 .frente {
   position: absolute;
   background-color: #1055ff;
+  transition: all 0.6s ease-in-out;
 }
 .frente {
   background-color: red;
   z-index: 1;
-  transition: all 0.4s ease;
+}
+.tras {
 }
 /*-----------------------ANIMATIONS---------------------------*/
 .frente:hover {
-  height: 10%;
+  z-index: 0;
+  transform: rotate3d(0, 1, 0, 3.142rad);
+}
+.frente:hover .tras {
+  z-index: 1;
 }
 
-@keyframes fillIn {
-  from {
-    width: 0%;
-  }
-}
-@keyframes fillOut {
-  to {
-    width: 0%;
-  }
+.tras:hover {
+  z-index: 1;
 }
 
 @keyframes fluctuate {
