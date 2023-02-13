@@ -12,7 +12,7 @@
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-margin-top: 0.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
   box-sizing: border-box;
 }
 body {
@@ -132,11 +132,15 @@ nav a:hover {
   width: 45vw;
   filter: drop-shadow(0 0 30px var(--black));
 }
+.aboutLeft p {
+  font-weight: 500;
+}
 .aboutRight {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: justify;
   border-radius: 5rem;
   font-size: 1.6rem;
   width: 45vw;
@@ -167,9 +171,6 @@ nav a:hover {
   width: 100vw;
   height: 100vh;
   color: white;
-}
-.carousel h1 {
-  font-size: 3rem;
 }
 .icons {
   padding: 4rem;
@@ -245,9 +246,19 @@ nav a:hover {
   pointer-events: none;
 }
 .knowledgeText {
-  margin: 10px;
-  padding: 10px;
+  margin: 12px;
+  padding: 12px;
   font-size: 1.6rem;
+  text-align: justify;
+}
+.knowledgeText a {
+  text-decoration: none;
+}
+.knowledgeText li {
+  margin: 8px;
+  font-size: 1.3rem;
+  text-align: justify;
+  text-decoration: underline;
 }
 
 :where(.positionCenter) img {
@@ -258,19 +269,18 @@ nav a:hover {
 }
 
 /* ------------------------------------ Soft Skills Sections ------------------------ */
+#Skills {
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
 .skills {
   display: flex;
   align-items: center;
   height: 100vh;
   color: white;
 }
-.skills h1 {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-}
+
 .skillItem {
   margin-top: 15rem;
   display: flex;
@@ -290,6 +300,7 @@ nav a:hover {
 .skillBody {
   font-size: 1.6rem;
   padding: 1rem;
+  text-align: justify;
 }
 .skillTitle,
 .skillBody {
@@ -309,7 +320,11 @@ nav a:hover {
 }
 
 /* ------------------------------------ Project Sections ------------------------ */
-
+.sectionsTitle {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
 .projetos {
   height: 100%;
   width: 100%;
@@ -317,20 +332,14 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-#Projects {
+.projects {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
   grid-template-rows: auto;
-}
-#Projects .anchorStyle {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: white;
+  justify-content: center;
+  row-gap: 2rem;
 }
 
 .square {
@@ -352,10 +361,17 @@ nav a:hover {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+  text-align: justify;
   box-shadow: 0px 2px 8px white;
+  padding: 8px;
 }
 .frente h1 {
   font-size: 2rem;
+}
+.frente span {
+  color: #0f2b29;
+  font-size: 1.1rem;
+  text-decoration: underline;
 }
 .tras img {
   width: 95%;
@@ -369,11 +385,12 @@ nav a:hover {
 .tras a:hover {
   opacity: 0.7;
 }
-.tras:hover {
-  width: 130%;
-  height: 130%;
+.square:hover {
+  width: 105%;
+  height: 105%;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  z-index: 10;
 }
 .projectHidden {
   visibility: collapse;
@@ -498,6 +515,10 @@ footer {
   transform: translateX(0);
 }
 
+.anchorStyle {
+  font-style: italic;
+  font-size: 5rem;
+}
 /*-----------------------ANIMATIONS---------------------------*/
 
 @keyframes fluctuate {
