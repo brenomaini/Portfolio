@@ -22,22 +22,27 @@
       </div>
       <nav class="nav">
         <a class="navItem" href="#" id="Home">Home</a>
-        <a class="navItem" href="#knowledgeArea">Conhecimento</a>
-        <a class="navItem" href="#Skills">Soft Skills</a>
-        <a class="navItem" href="#Projects">Projetos</a>
-        <a class="navItem" href="#Contato">Contato</a>
+        <a class="navItem" href="#KnowledgeAreaAnchor">Conhecimento</a>
+        <a class="navItem" href="#SkillsAnchor">Soft Skills</a>
+        <a class="navItem" href="#ProjectsAnchor">Projetos</a>
+        <a class="navItem" href="#ContactAnchor">Contato</a>
+        <div class="flags">
+          <img
+            src="./images/flags/ptbr.svg"
+            class="languageFlag ptbr selected"
+          />
+          <img src="./images/flags/english.svg" class="languageFlag en" />
+        </div>
       </nav>
     </header>
 
     <div class="container">
       <div class="outro hidden" id="About">
         <div class="aboutLeft">
-          <div>
-            <h1>Olá,</h1>
-            Eu sou o<span> Breno Maini!</span>
-          </div>
-
-          <span class="feDev">FullStack Developer.</span>
+          <h1>Olá, me chamo</h1>
+          <span class="feDev">Breno Maini</span>
+          <h2>e sou um</h2>
+          <span class="feDev">Dev. FullStack</span>
         </div>
         <div class="aboutRight">
           <h1>FullStack em desenvolvimento</h1>
@@ -45,11 +50,11 @@
           Busco constante evolução nas linguagens base. Tendo como foco para o
           inicio do aprendizado JS puro, para alguns JsVanilla, não vejo
           aprender outras linguagens como limitação, mas trato JS como meu ponto
-          de partida.
+          de partida. FullStack - React/NodeJS/Mongo
         </div>
       </div>
 
-      <span id="knowledgeArea"></span>
+      <span id="KnowledgeAreaAnchor"></span>
       <div class="carousel hidden">
         <h1>MEUS CONHECIMENTOS</h1>
         <div class="icons">
@@ -170,8 +175,9 @@
           </div>
         </div>
       </div>
-      <span id="Skills"></span>
+      <span id="SkillsAnchor"> </span>
       <div class="outro skills hidden">
+        <h1>SOFT SKILLS</h1>
         <div class="skillItem">
           <img src="./images/Skills/perspective.svg" alt="" srcset="" />
           <span class="skillTitle">Prudência</span>
@@ -221,18 +227,87 @@
           </span>
         </div>
       </div>
-
+      <span id="ProjectsAnchor"> </span>
       <div class="outro hidden" id="Projects">
-        <div class="square">
-          <div class="frente projetos">Frente</div>
-          <div class="tras projetos">Trás</div>
+        <h1 class="anchorStyle">PROJETOS</h1>
+
+        <div class="square hidden">
+          <div class="frente projetos projectShow">
+            <h1>Link Shortner</h1>
+            Projeto desenvolvido para implementação e teste de APIs e Serverless
+            Functions
+          </div>
+          <div class="tras projetos projectHidden">
+            <a href="https://shortnerapi.netlify.app" target="_blank">Link</a>
+          </div>
         </div>
-        <a href="https://shortnerapi.netlify.app">Link Shortner</a>
-        <div class="projetos"></div>
-        <a href="https://diaryapp-ygrh.onrender.com/"> Diary</a>
-        <div class="projetos"></div>
-        <div class="projetos"></div>
+        <div class="square hidden">
+          <div class="frente projetos projectShow">
+            <h1>CRUD</h1>
+            Projeto criado no intuito de ser o primeiro CRUD desenvolvido apenas
+            por mim.
+            <p>
+              Caso o primeiro load se mostre um pouco lento é devido ao servidor
+              de hospedagem estar fora do Brasil.
+            </p>
+          </div>
+          <div class="tras projetos projectHidden">
+            <img src="./images/ProjectsPreview/diary.png" />
+            <a href="https://diaryapp-ygrh.onrender.com/" target="_blank">
+              Link</a
+            >
+          </div>
+        </div>
+        <div class="square hidden">
+          <div class="frente projetos projectShow">
+            Sobre o projeto, blablbla
+          </div>
+          <div class="tras projetos projectHidden">
+            <a href="#" target="_blank"> Link</a>
+          </div>
+        </div>
+        <div class="square hidden">
+          <div class="frente projetos projectShow">
+            Sobre o projeto, blablbla
+          </div>
+          <div class="tras projetos projectHidden">
+            <a href="#" target="_blank"> Link</a>
+          </div>
+        </div>
+        <div class="square hidden">
+          <div class="frente projetos projectShow">
+            Sobre o projeto, blablbla
+          </div>
+          <div class="tras projetos projectHidden">
+            <a href="#" target="_blank"> Link</a>
+          </div>
+        </div>
+        <div class="square hidden">
+          <div class="frente projetos projectShow">
+            Sobre o projeto, blablbla
+          </div>
+          <div class="tras projetos projectHidden">
+            <a href="#" target="_blank"> Link</a>
+          </div>
+        </div>
+        <div class="square hidden">
+          <div class="frente projetos projectShow">
+            Sobre o projeto, blablbla
+          </div>
+          <div class="tras projetos projectHidden">
+            <a href="#" target="_blank"> Link</a>
+          </div>
+        </div>
+        <div class="square hidden">
+          <div class="frente projetos projectShow">
+            Sobre o projeto, blablbla
+          </div>
+          <div class="tras projetos projectHidden">
+            <a href="#" target="_blank"> Link</a>
+          </div>
+        </div>
       </div>
+      <span id="ContactAnchor"> </span>
 
       <div class="outro hidden" id="Contato">
         <div class="info">

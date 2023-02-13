@@ -1,8 +1,9 @@
 document.querySelectorAll(".item").forEach(function listenToClick(element) {
   element.addEventListener("click", moveIfClicked);
 });
+const LanguageFlags = document.querySelectorAll(".languageFlag");
 
-const observer = new IntersectionObserver((entries) => {
+const observePageFocus = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
@@ -13,7 +14,21 @@ const observer = new IntersectionObserver((entries) => {
 });
 //
 const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
+hiddenElements.forEach((el) => observePageFocus.observe(el));
+
+LanguageFlags.forEach((listenToClickAtFlag) => {
+  clickedFlag = listenToClickAtFlag;
+  listenToClickAtFlag.addEventListener("click", changeLanguage);
+});
+
+function changeLanguage(flagClicked) {
+  selectedLanguage = flagClicked.target.classList;
+
+  selectedLanguage.contains("selected")
+    ? null
+    : document.querySelector(".selected").classList.remove("selected"),
+    selectedLanguage.add("selected");
+}
 
 function moveIfClicked(clickedItem) {
   const checkIfClickedItemIsAlreadyAtCenter =
@@ -37,19 +52,37 @@ function moveIfClicked(clickedItem) {
   );
 }
 
-/*DESISTI*/
+const listedProjects = document.querySelectorAll(".square");
 
-// let item = document.querySelectorAll('input').forEach(function checkIfChecked(e){
-//   e.addEventListener('change',moveIfLogoClicked)
-// })
+listedProjects.forEach((project) => {
+  projectMouseOverObserver = project;
 
-// function moveIfLogoClicked(e){
-// const logoClicked = e.target.id.toString() + "KB";
-// let momentItemAtCenter = document.querySelector('.positionCenter');
-// let clickedLogo = document.getElementById(`${logoClicked}`);
-// let clickedPosition = clickedLogo.classList[1];
+  projectMouseOverObserver.addEventListener("mouseenter", mouseOverProject);
+  projectMouseOverObserver.addEventListener("mouseleave", mouseOverProject);
+});
 
-// momentItemAtCenter.classList.replace('positionCenter',`${clickedPosition}`);
-// clickedLogo.classList.replace(`${clickedPosition}`,'positionCenter');
+function mouseOverProject(selectedProject) {
+  selectedSquare = selectedProject.target;
 
-// }
+  if (selectedProject.type == "mouseenter") {
+    selectedSquare.children[0].classList.replace(
+      "projectShow",
+      "projectHidden"
+    );
+    selectedSquare.children[1].classList.replace(
+      "projectHidden",
+      "projectShow"
+    );
+  } else {
+    selectedSquare.children[1].classList.replace(
+      "projectShow",
+      "projectHidden"
+    );
+    selectedSquare.children[0].classList.replace(
+      "projectHidden",
+      "projectShow"
+    );
+  }
+}
+
+/* Implementar movimento by click no logo (com um input hidden)*/
