@@ -49,7 +49,7 @@
           <h1>FullStack em desenvolvimento</h1>
 
           Busco constante evolução nas linguagens base. Tendo como foco para o
-          inicio do aprendizado JS puro, para alguns JsVanilla, não vejo
+          inicio do aprendizado JS puro, para alguns JsVanilla. Não vejo
           aprender outras linguagens como limitação, mas trato aprender JS e
           React como meu ponto de partida.
         </div>
@@ -58,129 +58,211 @@
       <span id="KnowledgeAreaAnchor"></span>
       <div class="carousel hidden sectionsTitle">
         <h1 class="anchorStyle">MEUS CONHECIMENTOS</h1>
-        <p>clique sobre os icones ou textos</p>
+        <p>clique sobre os icones estáticos ou flutuantes</p>
         <div class="icons">
-          <img src="./images/javascript.svg" class="logoIcon" />
-          <img src="./images/css.svg" class="logoIcon" />
-          <img src="./images/html.svg" class="logoIcon" />
-          <img src="./images/react.svg" class="logoIcon" />
-          <img src="./images/node-js.svg" class="logoIcon" />
-          <img src="./images/mongodb.svg" class="logoIcon" />
-          <img src="./images/tailwindcss.svg" class="logoIcon" />
-        </div>
+          <input
+            type="radio"
+            id="java"
+            name="selectedKnowledge"
+            hidden
+            checked
+          />
+          <label for="java">
+            <img src="./images/javascript.svg" class="logoIcon" alt="Java" />
+          </label>
+          <input
+            type="radio"
+            id="css"
+            name="selectedKnowledge"
+            hidden
+            class="logoIconRadio"
+          />
+          <label for="css">
+            <img src="./images/css.svg" class="logoIcon" alt="Css" />
+          </label>
+          <input
+            type="radio"
+            id="html"
+            name="selectedKnowledge"
+            hidden
+            class="logoIconRadio"
+          />
+          <label for="html">
+            <img src="./images/html.svg" class="logoIcon" alt="Html" />
+          </label>
+          <input
+            type="radio"
+            id="react"
+            name="selectedKnowledge"
+            hidden
+            class="logoIconRadio"
+          /><label for="react">
+            <img src="./images/react.svg" class="logoIcon" alt="React" />
+          </label>
+          <input
+            type="radio"
+            id="node"
+            name="selectedKnowledge"
+            hidden
+            class="logoIconRadio"
+          />
+          <label for="node">
+            <img src="./images/node-js.svg" class="logoIcon" alt="Node" />
+          </label>
+          <input
+            type="radio"
+            id="mongodb"
+            name="selectedKnowledge"
+            hidden
+            class="logoIconRadio"
+          />
+          <label for="mongodb">
+            <img src="./images/mongodb.svg" class="logoIcon" alt="Mongo" />
+          </label>
+          <input
+            type="radio"
+            id="tailwindcss"
+            name="selectedKnowledge"
+            hidden
+            class="logoIconRadio"
+            alt="Tailwind"
+          />
 
-        <div class="item positionCenter" id="JavaKB">
-          <img
-            src="./images/javascript.svg"
-            alt="Javascript Logo Image"
-            srcset=""
-            class="image"
-          />
-          <div class="knowledge">
-            <div class="knowledgeText">
-              Conhecimento básico consolidado, consigo realizar diversas tarefas
-              desde a manipulação da DOM quanto a Async/Await promisses.<br />
-              <br />
-              Busco dominar essa linguagem por sua versatilidade e por possuir
-              boas bibliotecas disponíveis no mercado.
+          <label for="tailwindcss">
+            <img
+              src="./images/tailwindcss.svg"
+              class="logoIcon"
+              alt="Tailwind"
+            />
+          </label>
+        </div>
+        <label for="java">
+          <div class="item positionCenter" id="Java">
+            <img
+              src="./images/javascript.svg"
+              alt="Javascript Logo Image"
+              class="image"
+            />
+            <div class="knowledge">
+              <div class="knowledgeText">
+                Conhecimento básico consolidado, consigo realizar diversas
+                tarefas desde a manipulação da DOM quanto a Async/Await
+                promisses.<br />
+                <br />
+                Busco dominar essa linguagem por sua versatilidade e por possuir
+                boas bibliotecas disponíveis no mercado.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item positionLeft" id="HtmlKB">
-          <img
-            src="./images/html.svg"
-            alt="HTML Logo Image"
-            srcset=""
-            class="image"
-          />
-          <div class="knowledge">
-            <div class="knowledgeText">
-              Assim como no CSS as ideias são rapidamente postas em
-              prática,dependendo apenas de algumas consultas para funções que
-              não são utilizadas com tanta frequência.
+        </label>
+        <label for="html">
+          <div class="item positionLeft" id="Html">
+            <img
+              src="./images/html.svg"
+              alt="HTML Logo Image"
+              srcset=""
+              class="image"
+            />
+            <div class="knowledge">
+              <div class="knowledgeText">
+                Assim como no CSS as ideias são rapidamente postas em
+                prática,dependendo apenas de algumas consultas para funções que
+                não são utilizadas com tanta frequência.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item positionMiddleLeft" id="NodeKB">
-          <img
-            src="./images/node-js.svg"
-            alt="NodeJS Logo Image"
-            srcset=""
-            class="image"
-          />
-          <div class="knowledge">
-            <div class="knowledgeText">
-              Conhecimento superficial, não é algo desconhecido, mas para que
-              faça o uso de forma correta será necessário a consulta constante
-              nos documentos da linguagem.
+        </label>
+        <label for="node">
+          <div class="item positionMiddleLeft" id="Node">
+            <img
+              src="./images/node-js.svg"
+              alt="NodeJS Logo Image"
+              srcset=""
+              class="image"
+            />
+            <div class="knowledge">
+              <div class="knowledgeText">
+                Conhecimento superficial, não é algo desconhecido, mas para que
+                faça o uso de forma correta será necessário a consulta constante
+                nos documentos da linguagem.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item positionMiddleRight" id="ReactKB">
-          <img
-            src="./images/react.svg"
-            alt="React Logo Image"
-            srcset=""
-            class="image"
-          />
-          <div class="knowledge">
-            <div class="knowledgeText">
-              Iniciando os estudos com alguns projetos basicos como:
-              <ul>
-                <li>Habit Tracker "Follow Along" - Rocketseat</li>
-                <li>"To-Do"</li>
-              </ul>
-              O Projeto Follow Along foi realizado utilizando as liguagens
-              TypeScript+React para que junto da experiencia de React eu também
-              tivesse já um primeiro contato com um método tipado.
+        </label>
+        <label for="react">
+          <div class="item positionMiddleRight" id="React">
+            <img
+              src="./images/react.svg"
+              alt="React Logo Image"
+              srcset=""
+              class="image"
+            />
+            <div class="knowledge">
+              <div class="knowledgeText">
+                Iniciando os estudos com alguns projetos basicos como:
+                <ul>
+                  <li>Habit Tracker "Follow Along" - Rocketseat</li>
+                  <li>"To-Do"</li>
+                </ul>
+                O Projeto Follow Along foi realizado utilizando as liguagens
+                TypeScript+React para que junto da experiencia de React eu
+                também tivesse já um primeiro contato com um método tipado.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item positionRight" id="CssKB">
-          <img
-            src=" ./images/css.svg"
-            alt="Css Logo Image"
-            srcset=""
-            class="image"
-          />
-          <div class="knowledge">
-            <div class="knowledgeText">
-              Nem todas as tarefas são realizadas de forma rápida, contudo, por
-              conhecer as possibilidades e os atributos disponíveis as respostas
-              são encontradas e as ideias saem do papel.
+        </label>
+        <label for="css">
+          <div class="item positionRight" id="Css">
+            <img
+              src=" ./images/css.svg"
+              alt="Css Logo Image"
+              srcset=""
+              class="image"
+            />
+            <div class="knowledge">
+              <div class="knowledgeText">
+                Nem todas as tarefas são realizadas de forma rápida, contudo,
+                por conhecer as possibilidades e os atributos disponíveis, as
+                respostas são encontradas e as ideias saem do papel.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item positionLeftBehind" id="mongoKB">
-          <img
-            src=" ./images/mongodb.svg"
-            alt="MongoDB Logo Image"
-            srcset=""
-            class="image"
-          />
-          <div class="knowledge">
-            <div class="knowledgeText">
-              Conhecimento superficial, não é algo desconhecido, mas para que
-              faça o uso de forma correta será necessário a consulta nos
-              documentos da ferramenta.
+        </label>
+
+        <label for="mongodb">
+          <div class="item positionLeftBehind" id="Mongo">
+            <img
+              src=" ./images/mongodb.svg"
+              alt="MongoDB Logo Image"
+              srcset=""
+              class="image"
+            />
+            <div class="knowledge">
+              <div class="knowledgeText">
+                Conhecimento superficial, não é algo desconhecido, mas para que
+                faça o uso de forma correta será necessário a consulta nos
+                documentos da ferramenta.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item positionRightBehind" id="tailWindKB">
-          <img
-            src=" ./images/tailwindcss.svg"
-            alt="Tailwind-Css Logo Image"
-            srcset=""
-            class="image"
-          />
-          <div class="knowledge">
-            <div class="knowledgeText">
-              Nem todas as tarefas são realizadas de forma rápida, contudo, por
-              conhecer as possibilidades e os atributos disponíveis as respostas
-              são encontradas e as ideias saem do papel.
+        </label>
+        <label for="tailwindcss">
+          <div class="item positionRightBehind" id="Tailwind">
+            <img
+              src=" ./images/tailwindcss.svg"
+              alt="Tailwind-Css Logo Image"
+              srcset=""
+              class="image"
+            />
+            <div class="knowledge">
+              <div class="knowledgeText">
+                Nem todas as tarefas são realizadas de forma rápida, contudo,
+                por conhecer as possibilidades e os atributos disponíveis, as
+                respostas são encontradas e as ideias saem do papel.
+              </div>
             </div>
           </div>
-        </div>
+        </label>
       </div>
       <span id="SkillsAnchor"> </span>
       <div class="outro hidden sectionsTitle" id="Skills">
@@ -268,7 +350,7 @@
           </div>
           <div class="square hidden">
             <div class="frente projetos projectShow">
-              <h1>PORTFOLIO</h1>
+              <h1>PORTFÓLIO</h1>
               Criado todo com JS/CSS/HTML puros, para concretizar e aperfeiçoar
               o que foi aprendido durante os estudos iniciais.
             </div>

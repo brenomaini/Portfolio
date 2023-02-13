@@ -1,6 +1,3 @@
-document.querySelectorAll(".item").forEach(function listenToClick(element) {
-  element.addEventListener("click", moveIfClicked);
-});
 const LanguageFlags = document.querySelectorAll(".languageFlag");
 
 const observePageFocus = new IntersectionObserver((entries) => {
@@ -30,6 +27,15 @@ function changeLanguage(flagClicked) {
     selectedLanguage.add("selected");
 }
 
+const knowledgeItemClicked = document.querySelectorAll(".item");
+knowledgeItemClicked.forEach(function listenToClick(clickedKnowledgeItem) {
+  clickedKnowledgeItem.addEventListener("click", moveIfClicked);
+});
+const knowledgeLogoClicked = document.querySelectorAll(".logoIcon");
+knowledgeLogoClicked.forEach(function listenToClick(clickedLogo) {
+  clickedLogo.addEventListener("click", moveIfLogoClicked);
+});
+
 function moveIfClicked(clickedItem) {
   const checkIfClickedItemIsAlreadyAtCenter =
     clickedItem.target.classList[1] == "positionCenter";
@@ -50,6 +56,28 @@ function moveIfClicked(clickedItem) {
     `${clickedItem.target.classList[1]}`,
     "positionCenter"
   );
+}
+
+/* Implementar movimento by click no logo (com um input hidden)*/
+function moveIfLogoClicked(clickedLogo) {
+  const clickedLogoID = clickedLogo.target.attributes["alt"].value;
+  const checkIfClickedLogoIsAtCenter = document
+    .querySelector(`#${clickedLogoID}`)
+    .classList.contains("positionCenter");
+  const clickedLogoItem = document.querySelector(`#${clickedLogoID}`);
+  const momentLogoAtCenter = document.querySelector(".positionCenter");
+  const positionOfClicked = clickedLogoItem.classList[1];
+
+  checkIfClickedLogoIsAtCenter
+    ? null
+    : clickedLogoItem.classList.replace(
+        `${positionOfClicked}`,
+        "positionCenter"
+      ),
+    momentLogoAtCenter.classList.replace(
+      "positionCenter",
+      `${positionOfClicked}`
+    );
 }
 
 const listedProjects = document.querySelectorAll(".square");
@@ -84,5 +112,3 @@ function mouseOverProject(selectedProject) {
     );
   }
 }
-
-/* Implementar movimento by click no logo (com um input hidden)*/
