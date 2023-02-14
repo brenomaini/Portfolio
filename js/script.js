@@ -1,5 +1,6 @@
-const LanguageFlags = document.querySelectorAll(".languageFlag");
 let actualFlag = "ptbr";
+
+const LanguageFlags = document.querySelectorAll(".languageFlag");
 
 const observePageFocus = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -163,3 +164,5 @@ async function formSubmit(e) {
     alert(error + ": " + "Error please refresh your browser");
   }
 }
+
+export { actualFlag };
