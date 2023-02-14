@@ -160,6 +160,6 @@ async function formSubmit(e) {
 
     window.location.href = "#";
   } catch (error) {
-    alert(error + ":" + "Error please refresh your browser");
+    alert(error + ": " + "Error please refresh your browser");
   }
 }
