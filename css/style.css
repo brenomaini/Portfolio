@@ -459,7 +459,7 @@ input[type="radio"]:checked + label {
   cursor: pointer;
   scale: 1.1;
 }
-#contactInfo {
+#ContactInfo {
   padding: 10px;
   position: absolute;
   text-align: center;
@@ -472,7 +472,7 @@ input[type="radio"]:checked + label {
   filter: drop-shadow(-5px 8px 5px var(--LightGreen));
   color: white;
 }
-#contactInfo input,
+#ContactInfo input,
 textarea {
   margin: 15px;
   width: 50%;
