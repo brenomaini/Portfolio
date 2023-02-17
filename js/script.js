@@ -1,5 +1,4 @@
 const LanguageFlags = document.querySelectorAll(".languageFlag");
-let actualFlag = "ptbr";
 
 const observePageFocus = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -13,21 +12,6 @@ const observePageFocus = new IntersectionObserver((entries) => {
 //
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observePageFocus.observe(el));
-
-LanguageFlags.forEach((listenToClickAtFlag) => {
-  clickedFlag = listenToClickAtFlag;
-  listenToClickAtFlag.addEventListener("click", changeLanguage);
-});
-
-function changeLanguage(flagClicked) {
-  selectedLanguage = flagClicked.target.classList;
-
-  selectedLanguage.contains("selected")
-    ? null
-    : document.querySelector(".selected").classList.remove("selected"),
-    selectedLanguage.add("selected"),
-    (actualFlag = selectedLanguage[1]);
-}
 
 const knowledgeItemClicked = document.querySelectorAll(".item");
 knowledgeItemClicked.forEach(function listenToClick(clickedKnowledgeItem) {
@@ -153,7 +137,7 @@ async function formSubmit(e) {
     ).then((res) => {
       form.reset();
 
-      actualFlag == "ptbr"
+      actualFlag == "pt-br"
         ? alert("Obrigado, entrarei em contato o mais breve possível!")
         : alert("Thank You, i'll contact you ASAP!");
     });

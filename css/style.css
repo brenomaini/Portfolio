@@ -73,9 +73,10 @@ nav a:hover {
 }
 .flags {
   display: flex;
+  justify-content: space-between;
 }
 .languageFlag {
-  width: 5rem;
+  width: 3rem;
   height: 3rem;
 }
 .en {
@@ -92,7 +93,6 @@ nav a:hover {
 }
 
 .container {
-  border-radius: 0, 0, 1rem, 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -130,7 +130,6 @@ nav a:hover {
   flex-direction: column;
   font-size: 3.2rem;
   width: 45vw;
-  filter: drop-shadow(0 0 30px var(--black));
 }
 .aboutLeft p {
   font-weight: 500;
@@ -138,15 +137,15 @@ nav a:hover {
 .aboutRight {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   text-align: justify;
-  border-radius: 5rem;
-  font-size: 1.6rem;
-  width: 45vw;
-  padding: 5rem;
+  font-size: 1.8rem;
+  width: 50vw;
+  height: 35vh;
+  padding: 3rem;
   background: var(--LightGreen);
-  filter: drop-shadow(0 0 10px var(--black));
+  filter: drop-shadow(0 0 2px var(--black));
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -158,6 +157,7 @@ nav a:hover {
   display: block;
   font-size: 7rem;
   color: white;
+  filter: drop-shadow(0 0 3px var(--black));
 }
 
 /* ------------------------------------ Knowledge Section ------------------------ */
@@ -173,17 +173,44 @@ nav a:hover {
   color: white;
 }
 .icons {
+  position: relative;
   padding: 4rem;
   display: flex;
   flex-direction: row;
   gap: 3rem;
 }
 .logoIcon {
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.logoIcon:hover {
+  scale: 1.1;
+}
+
+.tooltip {
+  visibility: hidden;
+  font-size: 1rem;
+  width: 120px;
+  background-color: var(--LighterGreen);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+label:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 input[type="radio"]:checked + label {
-  filter: drop-shadow(0 2px 2px white);
+  filter: drop-shadow(0 1px 5px white);
 }
 .item {
   position: absolute;
@@ -235,8 +262,8 @@ input[type="radio"]:checked + label {
   animation: fluctuate infinite ease-in-out 2.5s;
 }
 .image {
-  width: 10vw;
-  height: 10vh;
+  width: 10rem;
+  height: 10rem;
   pointer-events: none;
 }
 .knowledge {
@@ -299,6 +326,8 @@ input[type="radio"]:checked + label {
 }
 .skillItem:hover {
   width: 250%;
+  transition: width border-bottom 1s ease-in-out;
+  border-bottom: var(--LighterGreen) 1px solid;
 }
 .skillBody {
   font-size: 1.6rem;
@@ -314,8 +343,11 @@ input[type="radio"]:checked + label {
 }
 .skillItem:hover :last-child {
   opacity: 1;
-
-  border-radius: 10px;
+  transition-delay: 0.8s;
+}
+.skillItem:not(:hover) :last-child {
+  transition-delay: 0s;
+  opacity: 0;
 }
 .skillItem:hover span:first-of-type {
   opacity: 0.3;
@@ -350,13 +382,11 @@ input[type="radio"]:checked + label {
   width: 20rem;
   height: 20rem;
   color: white;
-
-  border-radius: 10px;
 }
 .tras,
 .frente {
   position: absolute;
-  border-radius: 10px;
+
   background-color: var(--LighterGreen);
   font-size: 1rem;
   display: flex;
@@ -365,7 +395,7 @@ input[type="radio"]:checked + label {
   justify-content: space-evenly;
   text-align: center;
   text-align: justify;
-  box-shadow: 0px 2px 8px white;
+  box-shadow: 0px 0px 5px var(--DarkerGreen);
   padding: 8px;
 }
 .frente h1 {
@@ -378,13 +408,20 @@ input[type="radio"]:checked + label {
 }
 .tras img {
   width: 95%;
-  border-radius: 10px;
+
   box-shadow: 0 1px 1px black;
 }
 .tras a {
   font-size: 1.5rem;
-  color: white;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  height: 3rem;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 .tras a:hover {
   opacity: 0.7;
@@ -392,15 +429,18 @@ input[type="radio"]:checked + label {
 .square:hover {
   width: 110%;
   height: 50%;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
   z-index: 10;
 }
 .projectHidden {
   visibility: collapse;
+  opacity: 0;
 }
 .projectShow {
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
   visibility: visible;
+  transition-delay: opacity 0.2s;
 }
 
 /* ------------------------------------ Contact Sections ------------------------ */
@@ -424,7 +464,7 @@ input[type="radio"]:checked + label {
   top: 15%;
   left: 18%;
   border-radius: 50%;
-  box-shadow: 0px 8px 5px var(--LightGreen);
+  box-shadow: 0px 5px 3px var(--LightGreen);
 }
 .info {
   position: absolute;
@@ -436,8 +476,7 @@ input[type="radio"]:checked + label {
   width: 50%;
   height: 50%;
   background-color: var(--LighterGreen);
-  border-radius: 10px;
-  filter: drop-shadow(-5px 5px 5px black);
+  filter: drop-shadow(0px 0px 3px black);
 }
 .info span {
   font-size: 2.5rem;
@@ -468,8 +507,8 @@ input[type="radio"]:checked + label {
   right: 15%;
   font-size: 2.5rem;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  filter: drop-shadow(-5px 8px 5px var(--LightGreen));
+
+  filter: drop-shadow(0px 2px 10px var(--LightGreen));
   color: white;
 }
 #ContactInfo input,
@@ -481,7 +520,7 @@ textarea {
   width: 70%;
 }
 .submit {
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .submit:hover {
   opacity: 0.9;
@@ -490,7 +529,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: white;
-  filter: drop-shadow(0px 0px 5px white);
+  filter: drop-shadow(0px 0px 8px var(--LightGreen));
 }
 footer {
   color: white;
@@ -523,6 +562,7 @@ footer {
   font-style: italic;
   font-size: 5rem;
 }
+
 /*-----------------------ANIMATIONS---------------------------*/
 
 @keyframes fluctuate {

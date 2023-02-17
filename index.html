@@ -21,11 +21,13 @@
         >
       </div>
       <nav class="nav">
-        <a class="navItem" href="#" id="Home">Home</a>
-        <a class="navItem" href="#KnowledgeAreaAnchor">Conhecimento</a>
-        <a class="navItem" href="#SkillsAnchor">Soft Skills</a>
-        <a class="navItem" href="#ProjectsAnchor">Projetos</a>
-        <a class="navItem" href="#ContactAnchor">Contato</a>
+        <a class="navItem" href="#" id="HomeNav">Início</a>
+        <a class="navItem" href="#KnowledgeAreaAnchor" id="KnowledgeNav"
+          >Conhecimento</a
+        >
+        <a class="navItem" href="#SkillsAnchor" id="SkillsNav">Soft Skills</a>
+        <a class="navItem" href="#ProjectsAnchor" id="ProjectsNav">Projetos</a>
+        <a class="navItem" href="#ContactAnchor" id="ContactNav">Contato</a>
         <div class="flags">
           <img
             src="./images/flags/ptbr.svg"
@@ -46,19 +48,22 @@
           <p>React-NodeJS-Mongo</p>
         </div>
         <div class="aboutRight">
-          <h1>FullStack em desenvolvimento</h1>
+          <h1>Mais sobre mim</h1>
 
-          Busco constante evolução nas linguagens base. Tendo como foco para o
-          início do aprendizado JS puro, para alguns JsVanilla. <br />
-          Não vejo aprender outras linguagens como limitação, mas trato aprender
-          JS e React como meu ponto de partida.
+          Busco constante evolução nas linguagens base, tendo como foco para o
+          início do aprendizado JavaScript puro. Não vejo aprender outras
+          linguagens como limitação, mas trato aprender JS, React e Node+Mongo
+          como meus pontos focais.
+          <h4>
+            Programação não é minha fonte de renda no momento, mas faz parte de
+            todo o meu dia através de estudos.
+          </h4>
         </div>
       </div>
 
       <span id="KnowledgeAreaAnchor"></span>
       <div class="carousel hidden sectionsTitle">
         <h1 class="anchorStyle">MEUS CONHECIMENTOS</h1>
-        <p>clique sobre os icones estáticos ou flutuantes</p>
         <div class="icons">
           <input
             type="radio"
@@ -68,6 +73,7 @@
             checked
           />
           <label for="java">
+            <div class="tooltip">JavaScript</div>
             <img src="./images/javascript.svg" class="logoIcon" alt="Java" />
           </label>
           <input
@@ -78,6 +84,8 @@
             class="logoIconRadio"
           />
           <label for="css">
+            <div class="tooltip">CSS</div>
+
             <img src="./images/css.svg" class="logoIcon" alt="Css" />
           </label>
           <input
@@ -88,6 +96,8 @@
             class="logoIconRadio"
           />
           <label for="html">
+            <div class="tooltip">HTML</div>
+
             <img src="./images/html.svg" class="logoIcon" alt="Html" />
           </label>
           <input
@@ -97,6 +107,8 @@
             hidden
             class="logoIconRadio"
           /><label for="react">
+            <div class="tooltip">React</div>
+
             <img src="./images/react.svg" class="logoIcon" alt="React" />
           </label>
           <input
@@ -107,6 +119,8 @@
             class="logoIconRadio"
           />
           <label for="node">
+            <div class="tooltip">NodeJS</div>
+
             <img src="./images/node-js.svg" class="logoIcon" alt="Node" />
           </label>
           <input
@@ -117,6 +131,8 @@
             class="logoIconRadio"
           />
           <label for="mongodb">
+            <div class="tooltip">MongoDB</div>
+
             <img src="./images/mongodb.svg" class="logoIcon" alt="Mongo" />
           </label>
           <input
@@ -129,6 +145,8 @@
           />
 
           <label for="tailwindcss">
+            <div class="tooltip">TailWindCSS</div>
+
             <img
               src="./images/tailwindcss.svg"
               class="logoIcon"
@@ -329,8 +347,10 @@
               Serverless Functions
             </div>
             <div class="tras projetos projectHidden">
-              <img src="./images/ProjectsPreview/shortner.png" />
-              <a href="https://shortnerapi.netlify.app" target="_blank">Link</a>
+              <img src="./images/ProjectsPreview/shortner-min.png" />
+              <a href="https://shortnerapi.netlify.app" target="_blank"
+                >Abrir</a
+              >
             </div>
           </div>
           <div class="square hidden">
@@ -342,9 +362,9 @@
               <span>hospedado fora do Brasil.</span>
             </div>
             <div class="tras projetos projectHidden">
-              <img src="./images/ProjectsPreview/diary.png" />
+              <img src="./images/ProjectsPreview/diary-min.png" />
               <a href="https://diaryapp-ygrh.onrender.com/" target="_blank">
-                Link</a
+                Abrir</a
               >
             </div>
           </div>
@@ -355,8 +375,8 @@
               o que foi aprendido durante os estudos iniciais.
             </div>
             <div class="tras projetos projectHidden">
-              <img src="./images/ProjectsPreview/portfolio.png" />
-              <a href="#"> Link</a>
+              <img src="./images/ProjectsPreview/portfolio-min.png" />
+              <a href="#"> Abrir</a>
             </div>
           </div>
           <div class="square hidden">
@@ -368,18 +388,19 @@
               <span>Não finalizado.</span>
             </div>
             <div class="tras projetos projectHidden">
+              <img src="./images/ProjectsPreview/habit-min.jpg" />
               <a
                 href="https://github.com/brenomaini/HabitTracker-FollowAlong"
                 target="_blank"
               >
-                Link</a
+                Abrir</a
               >
             </div>
           </div>
         </div>
       </div>
       <span id="ContactAnchor"> </span>
-
+      <hr />
       <div class="outro hidden" id="Contato">
         <div class="info">
           <span>Mídias sociais</span><br />
@@ -418,5 +439,6 @@
     </div>
 
     <script src="./js/script.js"></script>
+    <script src="./js/language.js"></script>
   </body>
 </html>
