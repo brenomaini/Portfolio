@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,17 +21,39 @@
         >
       </div>
       <nav class="nav">
-        <a class="navItem" href="#" id="HomeNav">Início</a>
-        <a class="navItem" href="#KnowledgeAreaAnchor" id="KnowledgeNav"
+        <a class="navItem" href="#" id="HomeNav" lng-tag="homeNav">Início</a>
+        <a
+          class="navItem"
+          href="#KnowledgeAreaAnchor"
+          id="KnowledgeNav"
+          lng-tag="knowledgeNav"
           >Conhecimento</a
         >
-        <a class="navItem" href="#SkillsAnchor" id="SkillsNav">Soft Skills</a>
-        <a class="navItem" href="#ProjectsAnchor" id="ProjectsNav">Projetos</a>
-        <a class="navItem" href="#ContactAnchor" id="ContactNav">Contato</a>
+        <a
+          class="navItem"
+          href="#SkillsAnchor"
+          id="SkillsNav"
+          lng-tag="skillsNav"
+          >Soft Skills</a
+        >
+        <a
+          class="navItem"
+          href="#ProjectsAnchor"
+          id="ProjectsNav"
+          lng-tag="projectsNav"
+          >Projetos</a
+        >
+        <a
+          class="navItem"
+          href="#ContactAnchor"
+          id="ContactNav"
+          lng-tag="contactNav"
+          >Contato</a
+        >
         <div class="flags">
           <img
             src="./images/flags/ptbr.svg"
-            class="languageFlag ptbr selected"
+            class="languageFlag pt-BR selected"
           />
           <img src="./images/flags/english.svg" class="languageFlag en" />
         </div>
@@ -41,20 +63,21 @@
     <div class="container">
       <div class="outro hidden" id="About">
         <div class="aboutLeft">
-          <h1>Olá, me chamo</h1>
+          <h1 lng-tag="ola_me_chamo">Olá, me chamo</h1>
           <span class="feDev">Breno Maini</span>
-          <h2>e sou um</h2>
+          <h2 lng-tag="e_sou_um">e sou um</h2>
           <span class="feDev">Dev. FullStack</span>
           <p>React-NodeJS-Mongo</p>
         </div>
         <div class="aboutRight">
-          <h1>Mais sobre mim</h1>
-
-          Busco constante evolução nas linguagens base, tendo como foco para o
-          início do aprendizado JavaScript puro. Não vejo aprender outras
-          linguagens como limitação, mas trato aprender JS, React e Node+Mongo
-          como meus pontos focais.
-          <h4>
+          <h1 lng-tag="mais_sobre_mim">Mais sobre mim</h1>
+          <div lng-tag="mais_sobre_mim_text">
+            Busco constante evolução nas linguagens base, tendo como foco para o
+            início do aprendizado JavaScript puro. Não vejo aprender outras
+            linguagens como limitação, mas trato aprender JS, React e Node+Mongo
+            como meus pontos focais.
+          </div>
+          <h4 lng-tag="programacao_renda">
             Programação não é minha fonte de renda no momento, mas faz parte de
             todo o meu dia através de estudos.
           </h4>
@@ -63,7 +86,9 @@
 
       <span id="KnowledgeAreaAnchor"></span>
       <div class="carousel hidden sectionsTitle">
-        <h1 class="anchorStyle">MEUS CONHECIMENTOS</h1>
+        <h1 class="anchorStyle" lng-tag="meus_conhecimentos">
+          MEUS CONHECIMENTOS
+        </h1>
         <div class="icons">
           <input
             type="radio"
@@ -162,7 +187,7 @@
               class="image"
             />
             <div class="knowledge">
-              <div class="knowledgeText">
+              <div class="knowledgeText" lng-tag="conhecimento_js">
                 Conhecimento básico consolidado, consigo realizar diversas
                 tarefas desde a manipulação da DOM quanto a Async/Await
                 promisses.<br />
@@ -182,7 +207,7 @@
               class="image"
             />
             <div class="knowledge">
-              <div class="knowledgeText">
+              <div class="knowledgeText" lng-tag="conhecimento_html">
                 Assim como no CSS as ideias são rapidamente postas em
                 prática,dependendo apenas de algumas consultas para funções que
                 não são utilizadas com tanta frequência.
@@ -199,7 +224,7 @@
               class="image"
             />
             <div class="knowledge">
-              <div class="knowledgeText">
+              <div class="knowledgeText" lng-tag="conhecimento_node">
                 Conhecimento superficial, não é algo desconhecido, mas para que
                 faça o uso de forma correta será necessário a consulta constante
                 nos documentos da linguagem.
@@ -216,15 +241,17 @@
               class="image"
             />
             <div class="knowledge">
-              <div class="knowledgeText">
+              <div class="knowledgeText" lng-tag="conhecimento_react">
                 Iniciando os estudos com alguns projetos basicos como:
                 <ul>
                   <li>Habit Tracker "Follow Along" - Rocketseat</li>
                   <li>"To-Do"</li>
                 </ul>
-                O Projeto Follow Along foi realizado utilizando as liguagens
-                TypeScript+React para que junto da experiencia de React eu
-                também tivesse já um primeiro contato com um método tipado.
+                <div lng-tag="conhecimento_react_2">
+                  O Projeto Follow Along foi realizado utilizando as liguagens
+                  TypeScript+React para que junto da experiencia de React eu
+                  também tivesse já um primeiro contato com um método tipado.
+                </div>
               </div>
             </div>
           </div>
@@ -238,7 +265,7 @@
               class="image"
             />
             <div class="knowledge">
-              <div class="knowledgeText">
+              <div class="knowledgeText" lng-tag="conhecimento_css">
                 Nem todas as tarefas são realizadas de forma rápida, contudo,
                 por conhecer as possibilidades e os atributos disponíveis, as
                 respostas são encontradas e as ideias saem do papel.
@@ -256,7 +283,7 @@
               class="image"
             />
             <div class="knowledge">
-              <div class="knowledgeText">
+              <div class="knowledgeText" lng-tag="conhecimento_mongo">
                 Conhecimento superficial, não é algo desconhecido, mas para que
                 faça o uso de forma correta será necessário a consulta nos
                 documentos da ferramenta.
@@ -273,7 +300,7 @@
               class="image"
             />
             <div class="knowledge">
-              <div class="knowledgeText">
+              <div class="knowledgeText" lng-tag="conhecimento_tailwind">
                 Nem todas as tarefas são realizadas de forma rápida, contudo,
                 por conhecer as possibilidades e os atributos disponíveis, as
                 respostas são encontradas e as ideias saem do papel.
@@ -288,8 +315,8 @@
         <div class="skills">
           <div class="skillItem">
             <img src="./images/Skills/perspective.svg" alt="" srcset="" />
-            <span class="skillTitle">Prudência</span>
-            <span class="skillBody"
+            <span class="skillTitle" lng-tag="prudencia">Prudência</span>
+            <span class="skillBody" lng-tag="prudencia_text"
               >Apesar de não me considerar sábio,mas por ser bem comunicativo,
               muitos vem até mim para aconselhamentos. Sou uma pessoa cuidadosa
               e minhas escolhas são consistentemente prudentes em torno do
@@ -298,8 +325,8 @@
           </div>
           <div class="skillItem">
             <img src="./images/Skills/leadership.svg" alt="" srcset="" />
-            <span class="skillTitle">Liderança</span>
-            <span class="skillBody"
+            <span class="skillTitle" lng-tag="lideranca">Liderança</span>
+            <span class="skillBody" lng-tag="lideranca_text"
               >Constantemente encorajo o grupo a realizar coisas e busco
               preservar a harmonia entre a equipe fazendo com que todos se
               sintam incluídos. Organização de tarefas para terceiros e
@@ -309,8 +336,8 @@
           </div>
           <div class="skillItem">
             <img src="./images/Skills/learn.svg" alt="" srcset="" />
-            <span class="skillTitle">Aprendiz</span>
-            <span class="skillBody"
+            <span class="skillTitle" lng-tag="aprendiz">Aprendiz</span>
+            <span class="skillBody" lng-tag="aprendiz_text"
               >Acredito que sermos aprendizes eternos é o que nos torna
               desenvolvedores, para que possamos trilhar um bom caminho na vida
               como um todo, estar sempre em busca de aprendizado é essencial.
@@ -318,8 +345,10 @@
           </div>
           <div class="skillItem">
             <img src="./images/Skills/teamwork.svg" alt="" srcset="" />
-            <span class="skillTitle">TeamWork</span>
-            <span class="skillBody"
+            <span class="skillTitle" lng-tag="trabalho_em_equipe"
+              >Trabalho em Equipe</span
+            >
+            <span class="skillBody" lng-tag="trabalho_em_equipe_text"
               >Me adapto facilmente a novos grupos. Um colega leal e dedicado,
               sempre faço minha parte e trabalho duro pelo sucesso do grupo.
               Busco sempre apoiar em todo tipo de ocasião em que for possível.
@@ -327,8 +356,8 @@
           </div>
           <div class="skillItem">
             <img src="./images/Skills/criteria.svg" alt="" srcset="" />
-            <span class="skillTitle">Critério</span>
-            <span class="skillBody"
+            <span class="skillTitle" lng-tag="criterio">Critério</span>
+            <span class="skillBody" lng-tag="criterio_text"
               >Pensar sobre as coisas e examiná-las de todos os lados são
               aspectos importantes de quem eu sou. Mudar de ideia não é um
               problema, mas não tomo decisões sem analisar as possibilidades.
@@ -338,13 +367,15 @@
       </div>
       <span id="ProjectsAnchor"> </span>
       <div class="outro hidden sectionsTitle">
-        <h1 class="anchorStyle">PROJETOS</h1>
+        <h1 class="anchorStyle" lng-tag="projetos">PROJETOS</h1>
         <div class="projects">
           <div class="square hidden">
             <div class="frente projetos projectShow">
               <h1>Link Shortner</h1>
-              Projeto desenvolvido para implementação e teste de APIs e
-              Serverless Functions
+              <p lng-tag="shortner_text" class="projectDescription">
+                Projeto desenvolvido para implementação e teste de APIs e
+                Serverless Functions
+              </p>
             </div>
             <div class="tras projetos projectHidden">
               <img src="./images/ProjectsPreview/shortner-min.png" />
@@ -356,10 +387,12 @@
           <div class="square hidden">
             <div class="frente projetos projectShow">
               <h1>CRUD</h1>
-              Projeto criado no intuito de ser o primeiro CRUD desenvolvido
-              apenas por mim.
+              <div lng-tag="crud_text" class="projectDescription">
+                Projeto criado no intuito de ser o primeiro CRUD desenvolvido
+                apenas por mim.
+              </div>
 
-              <span>hospedado fora do Brasil.</span>
+              <span lng-tag="crud_span">hospedado fora do Brasil.</span>
             </div>
             <div class="tras projetos projectHidden">
               <img src="./images/ProjectsPreview/diary-min.png" />
@@ -371,8 +404,10 @@
           <div class="square hidden">
             <div class="frente projetos projectShow">
               <h1>PORTFÓLIO</h1>
-              Criado todo com JS/CSS/HTML puros, para concretizar e aperfeiçoar
-              o que foi aprendido durante os estudos iniciais.
+              <div lng-tag="portfolio_text" class="projectDescription">
+                Criado todo com JS/CSS/HTML puros, para concretizar e
+                aperfeiçoar o que foi aprendido durante os estudos iniciais.
+              </div>
             </div>
             <div class="tras projetos projectHidden">
               <img src="./images/ProjectsPreview/portfolio-min.png" />
@@ -382,10 +417,11 @@
           <div class="square hidden">
             <div class="frente projetos projectShow">
               <h1>HabitTracker Follow Along</h1>
-
-              Projeto desenvolvido para primeiro contato com TypeScript e
-              ReactNative
-              <span>Não finalizado.</span>
+              <div lng-tag="habit_text" class="projectDescription">
+                Projeto desenvolvido para primeiro contato com TypeScript e
+                ReactNative
+              </div>
+              <span lng-tag="habit_span">Não finalizado.</span>
             </div>
             <div class="tras projetos projectHidden">
               <img src="./images/ProjectsPreview/habit-min.jpg" />
@@ -403,7 +439,7 @@
       <hr />
       <div class="outro hidden" id="Contato">
         <div class="info">
-          <span>Mídias sociais</span><br />
+          <span lng-tag="midias_sociais">Mídias sociais</span><br />
           <span>
             <a href="https://linkedin.com/in/brenomaini" target="_blank"
               ><img src="./images/social/linkedin.svg" alt="" /></a
@@ -417,12 +453,13 @@
         </div>
 
         <form action="" id="ContactInfo">
-          Entre em contato<br />
-          <label for="name">Nome:</label
+          <div lng-tag="entre_em_contato">Entre em contato</div>
+          <label for="name" lng-tag="nome">Nome:</label
           ><input type="text" name="entry.1850254109" id="Name" /><br />
           <label for="email">Email:</label
           ><input type="email" name="entry.476346648" id="Email" /><br />
-          <label for="info">Informações:</label><br /><textarea
+          <label for="info" lng-tag="informacoes">Mensagem:</label
+          ><br /><textarea
             name="entry.1275965327"
             id="Info"
             cols="40"
@@ -439,6 +476,6 @@
     </div>
 
     <script src="./js/script.js"></script>
-    <script src="./js/language.js"></script>
+    <script src="./js/translate.js"></script>
   </body>
 </html>

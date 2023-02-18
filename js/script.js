@@ -137,7 +137,7 @@ async function formSubmit(e) {
     ).then((res) => {
       form.reset();
 
-      actualFlag == "pt-br"
+      actualFlag == "pt-BR"
         ? alert("Obrigado, entrarei em contato o mais breve possível!")
         : alert("Thank You, i'll contact you ASAP!");
     });
