@@ -583,15 +583,6 @@ footer {
 /*--------------------------Queries -----------------------*/
 
 @media (max-width: 768px) {
-  .outro {
-    /* background-color: black; */
-  }
-}
-
-@media (max-width: 480px) {
-  * {
-    /* border: solid red 1px !important; */
-  }
   nav {
     font-size: 1.2rem;
   }
