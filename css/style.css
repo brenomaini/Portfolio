@@ -20,6 +20,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -32,7 +34,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  width: 100vw;
+  width: 100%;
   color: white;
 }
 
@@ -52,7 +54,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   font-size: 2.8rem;
 }
 
@@ -95,7 +97,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 600vh;
   font-size: 2.4rem;
   background: linear-gradient(
@@ -115,7 +117,7 @@ nav a:hover {
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -167,7 +169,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: white;
 }
@@ -306,7 +308,7 @@ input[type="radio"]:checked + label {
   margin-top: 2rem;
   display: flex;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   color: white;
   justify-content: space-around;
 }
@@ -367,7 +369,7 @@ input[type="radio"]:checked + label {
   width: 100%;
 }
 .projects {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 40rem));
@@ -451,7 +453,7 @@ input[type="radio"]:checked + label {
 }
 #Contato {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 .subImage {
@@ -539,7 +541,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 5vh;
   font-size: 1.2rem;
   background-color: black;
@@ -607,14 +609,14 @@ footer {
 
   .aboutLeft {
     font-size: 2rem;
-    width: 100vw;
+    width: 100%;
   }
   .feDev {
     font-size: 4rem;
   }
   .aboutRight {
     font-size: 2rem;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     padding: 1rem;
   }
@@ -661,7 +663,7 @@ footer {
     display: none;
   }
   .knowledge {
-    width: 100vw;
+    width: 100%;
   }
   .knowledgeText {
     padding: 6px;
@@ -671,7 +673,7 @@ footer {
     font-size: 2rem;
   }
   #Skills {
-    width: 100vw;
+    width: 100%;
   }
   .skills {
     flex-direction: row;
@@ -681,7 +683,7 @@ footer {
   .skillItem {
     flex-direction: row;
     height: 5vh;
-    width: 100vw;
+    width: 100%;
   }
   .skillItem:hover {
     width: initial;
