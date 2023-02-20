@@ -61,15 +61,15 @@
     </header>
 
     <div class="container">
-      <div class="outro hidden" id="About">
-        <div class="aboutLeft">
+      <div class="outro" id="About">
+        <div class="aboutLeft hidden">
           <h1 lng-tag="ola_me_chamo">Olá, me chamo</h1>
           <span class="feDev">Breno Maini</span>
           <h2 lng-tag="e_sou_um">e sou um</h2>
           <span class="feDev">Dev. FullStack</span>
           <p>React-NodeJS-Mongo</p>
         </div>
-        <div class="aboutRight">
+        <div class="aboutRight hidden">
           <h1 lng-tag="mais_sobre_mim">Mais sobre mim</h1>
           <div lng-tag="mais_sobre_mim_text">
             Busco constante evolução nas linguagens base, tendo como foco para o
@@ -311,9 +311,9 @@
         </label>
       </div>
       <span id="SkillsAnchor"> </span>
-      <div class="outro hidden sectionsTitle" id="Skills">
-        <h1 class="anchorStyle">SOFT SKILLS</h1>
-        <div class="skills">
+      <div class="outro sectionsTitle" id="Skills">
+        <h1 class="anchorStyle hidden">SOFT SKILLS</h1>
+        <div class="skills hidden">
           <div class="skillItem">
             <img src="./images/Skills/perspective.svg" alt="" srcset="" />
             <span class="skillTitle" lng-tag="prudencia">Prudência</span>
@@ -367,8 +367,8 @@
         </div>
       </div>
       <span id="ProjectsAnchor"> </span>
-      <div class="outro hidden sectionsTitle">
-        <h1 class="anchorStyle" lng-tag="projetos">PROJETOS</h1>
+      <div class="outro sectionsTitle">
+        <h1 class="anchorStyle hidden" lng-tag="projetos">PROJETOS</h1>
         <div class="projects">
           <div class="square hidden">
             <div class="frente projetos projectShow">
@@ -446,10 +446,11 @@
       </div>
       <span id="ContactAnchor"> </span>
       <hr />
-      <div class="outro hidden" id="Contato">
+      <div class="outro" id="Contato">
         <div class="info">
-          <span lng-tag="midias_sociais">Mídias sociais</span><br />
-          <span>
+          <span lng-tag="midias_sociais" class="hidden">Mídias sociais</span
+          ><br />
+          <span class="hidden">
             <a href="https://linkedin.com/in/brenomaini" target="_blank"
               ><img src="./images/social/linkedin.svg" alt="" /></a
             ><a href="https://github.com/brenomaini" target="_blank"
@@ -457,11 +458,11 @@
             /></a>
           </span>
         </div>
-        <div class="subImage">
+        <div class="subImage hidden">
           <img src="./images/Minha/MinhFoto.png" id="Foto" alt="Dev Picture" />
         </div>
 
-        <form action="" id="ContactInfo">
+        <form action="" id="ContactInfo" class="hidden">
           <div lng-tag="entre_em_contato">Entre em contato</div>
           <label for="name" lng-tag="nome">Nome:</label
           ><input type="text" name="entry.1850254109" id="Name" /><br />
